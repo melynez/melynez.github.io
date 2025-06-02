@@ -1,10 +1,159 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>My GitHub Website</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Melyne Zhou</title>
+  <style>
+    :root {
+      --navy: #1F2A44;
+      --beige: #F9F7F1;
+      --text: #2C2C2C;
+      --muted: #CBD6E2;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: var(--beige);
+      color: var(--text);
+    }
+
+    header {
+      background-color: var(--navy);
+      color: white;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      color: var(--navy);
+    }
+
+    .hero {
+      text-align: center;
+      padding-top: 6rem;
+    }
+
+    .project {
+      background-color: white;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-left: 4px solid var(--navy);
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: var(--navy);
+      color: white;
+    }
+
+    a.button {
+      background-color: var(--navy);
+      color: white;
+      padding: 0.6rem 1rem;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-block;
+      margin-top: 1rem;
+    }
+
+    a.button:hover {
+      background-color: #32466d;
+    }
+  </style>
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <p>Welcome to my website.</p>
+
+  <!-- Header -->
+  <header>
+    <h1>Your Name</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Research</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h2>Biotech Researcher | Molecular Biology | Data-Driven Science</h2>
+    <p>Bridging the gap between wet-lab science and computational insight.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h3>About Me</h3>
+    <p>
+      I’m a molecular biology researcher currently exploring the intersection of genetics, machine learning, and clinical data. I specialize in applying computational methods to biological datasets to extract meaningful patterns and inform real-world solutions in healthcare and bioengineering.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h3>Research & Projects</h3>
+
+    <div class="project">
+      <h4>🧬 Project: CRISPR Gene Mapping</h4>
+      <p>
+        Developed an end-to-end pipeline for CRISPR guide RNA validation using publicly available genomic data. Integrated machine learning models to predict off-target effects.
+      </p>
+      <a class="button" href="#">View Paper</a>
+    </div>
+
+    <div class="project">
+      <h4>🧫 Project: Microbiome Diversity Visualizer</h4>
+      <p>
+        Built an interactive dashboard to visualize microbial community composition from 16S rRNA sequencing data. Used Python (Dash), and deployed on GitHub Pages.
+      </p>
+      <a class="button" href="#">Try the Demo</a>
+    </div>
+
+    <div class="project">
+      <h4>📊 Project: Biomedical Data Harmonization</h4>
+      <p>
+        Collaborated with a hospital lab to standardize messy clinical datasets. Applied NLP on lab reports and structured EMR data for improved integration into research workflows.
+      </p>
+      <a class="button" href="#">Read More</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h3>Contact</h3>
+    <p>
+      Let's connect! I'm open to collaborations, speaking opportunities, or just discussing science and coffee.
+    </p>
+    <a class="button" href="mailto:your.email@domain.com">Email Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Your Name — Powered by GitHub Pages
+  </footer>
+
 </body>
 </html>
