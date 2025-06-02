@@ -3,156 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Melyne Zhou</title>
+  <title>Your Name | Bioelectricity & Complexity</title>
   <style>
     :root {
-      --navy: #1F2A44;
       --beige: #F9F7F1;
+      --navy: #2A3B4C;
+      --green: #4B9E8F;
+      --light-green: #A7D7C5;
       --text: #2C2C2C;
-      --muted: #CBD6E2;
     }
 
     body {
       margin: 0;
-      font-family: 'Helvetica Neue', sans-serif;
+      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
       background-color: var(--beige);
       color: var(--text);
+      line-height: 1.6;
     }
 
     header {
       background-color: var(--navy);
       color: white;
       padding: 1rem 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+      text-align: center;
     }
 
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 1rem;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    section {
-      padding: 4rem 2rem;
+    main {
       max-width: 900px;
-      margin: auto;
+      margin: 0 auto;
+      padding: 2rem;
     }
 
-    h1, h2, h3 {
+    h1, h2 {
       color: var(--navy);
     }
 
-    .hero {
-      text-align: center;
-      padding-top: 6rem;
+    h2 {
+      border-bottom: 2px solid var(--light-green);
+      padding-bottom: 0.3rem;
+      margin-bottom: 1.2rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
     }
 
     .project {
       background-color: white;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
-      border-left: 4px solid var(--navy);
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-left: 5px solid var(--green);
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .project h3 {
+      margin-top: 0;
+      color: var(--navy);
     }
 
     footer {
       text-align: center;
       padding: 2rem;
+      font-size: 0.9rem;
       background-color: var(--navy);
       color: white;
-    }
-
-    a.button {
-      background-color: var(--navy);
-      color: white;
-      padding: 0.6rem 1rem;
-      border-radius: 4px;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-
-    a.button:hover {
-      background-color: #32466d;
     }
   </style>
 </head>
 <body>
 
-  <!-- Header -->
   <header>
     <h1>Your Name</h1>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Research</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <p>Exploring Bioelectricity, Complexity & Unconventional Intelligence</p>
   </header>
 
-  <!-- Hero -->
-  <section class="hero">
-    <h2>Biotech Researcher | Molecular Biology | Data-Driven Science</h2>
-    <p>Bridging the gap between wet-lab science and computational insight.</p>
-  </section>
+  <main>
 
-  <!-- About Section -->
-  <section id="about">
-    <h3>About Me</h3>
-    <p>
-      I’m a molecular biology researcher currently exploring the intersection of genetics, machine learning, and clinical data. I specialize in applying computational methods to biological datasets to extract meaningful patterns and inform real-world solutions in healthcare and bioengineering.
-    </p>
-  </section>
+    <section id="about">
+      <h2>About</h2>
+      <p>Hi! I’m a 16 y/o exploring all things bioelectricity and diverse intelligence.</p>
+      <p>I’m currently working with Dr. Michael Levin investigating complexity algorithms. Previously, I’ve worked in labs from materials science to organoids for cancer.</p>
+      <p>I’m interested in investigating the psychology of unconventional systems—i.e. applying behavioral tests typically administered in mice to deceptively simple organisms, algorithms, and synthetic/bioengineered systems. Fascinated by “code” in biology, such as deciphering patterns of communication between cells in the brain and elsewhere in the body.</p>
+      <p>I’m a fast learner, and I love diving down rabbit holes. Recent deep dives include organoids for cancer, biobots (anthrobots, neurobots), and developmental robotics & zero-shot learning. Curious about systems for innovation and scientific progress.</p>
+    </section>
 
-  <!-- Projects Section -->
-  <section id="projects">
-    <h3>Research & Projects</h3>
+    <section id="projects">
+      <h2>Projects</h2>
 
-    <div class="project">
-      <h4>🧬 Project: CRISPR Gene Mapping</h4>
-      <p>
-        Developed an end-to-end pipeline for CRISPR guide RNA validation using publicly available genomic data. Integrated machine learning models to predict off-target effects.
-      </p>
-      <a class="button" href="#">View Paper</a>
-    </div>
+      <div class="project">
+        <h3>Wrana lab @ LTRI (Mt. Sinai Health)</h3>
+        <ul>
+          <li>Shadowed tissue culture and imaging of intestinal and cerebral organoids for cancer.</li>
+          <li>Performed qPCR and cDNA extraction, gel electrophoresis.</li>
+          <li>Pipetting and sample testing for Robotics facility.</li>
+        </ul>
+      </div>
 
-    <div class="project">
-      <h4>🧫 Project: Microbiome Diversity Visualizer</h4>
-      <p>
-        Built an interactive dashboard to visualize microbial community composition from 16S rRNA sequencing data. Used Python (Dash), and deployed on GitHub Pages.
-      </p>
-      <a class="button" href="#">Try the Demo</a>
-    </div>
+      <div class="project">
+        <h3>AUTODIAL lab @ UofT</h3>
+        <ul>
+          <li>Contributed to developing modular self-driving lab for electrochemistry experiments.</li>
+          <li>Analysis of electrochemical data for alloys.</li>
+        </ul>
+      </div>
 
-    <div class="project">
-      <h4>📊 Project: Biomedical Data Harmonization</h4>
-      <p>
-        Collaborated with a hospital lab to standardize messy clinical datasets. Applied NLP on lab reports and structured EMR data for improved integration into research workflows.
-      </p>
-      <a class="button" href="#">Read More</a>
-    </div>
-  </section>
+      <div class="project">
+        <h3>de Lannoy lab @ McMaster University</h3>
+        <ul>
+          <li>Membrane synthesis, casting, and testing.</li>
+          <li>Created a basic prototype of my proposal for a chitosan-based membrane in redox-flow batteries.</li>
+        </ul>
+      </div>
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <h3>Contact</h3>
-    <p>
-      Let's connect! I'm open to collaborations, speaking opportunities, or just discussing science and coffee.
-    </p>
-    <a class="button" href="mailto:your.email@domain.com">Email Me</a>
-  </section>
+      <div class="project">
+        <h3>Speaker</h3>
+        <ul>
+          <li>Spoke at Web Summit in Lisbon, Portugal about the future of bioengineered systems in healthcare.</li>
+          <li>Spoke at Top 25 Women of Influence luncheon about lessons in making an influence.</li>
+        </ul>
+      </div>
 
-  <!-- Footer -->
+      <div class="project">
+        <h3>Writing</h3>
+        <ul>
+          <li>Published article w/ Climate Capital on AI for Materials Science.</li>
+          <li>Personal essays and rabbit holes (see Substack).</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
   <footer>
-    &copy; 2025 Your Name — Powered by GitHub Pages
+    &copy; 2025 Your Name. All rights reserved.
   </footer>
 
 </body>
