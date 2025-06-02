@@ -3,29 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Melyne Zhou's research in bioelectricity, complexity, and biotech.">
   <title>Melyne Zhou</title>
   <style>
-    :root {
-      --beige: #F9F7F1;
-      --navy: #2A3B4C;
-      --green: #4B9E8F;
-      --light-green: #A7D7C5;
-      --text: #2C2C2C;
-    }
+  :root {
+    --bg: #F8F9FA;           /* clean light gray background */
+    --navy: #243447;         /* deep professional blue-gray */
+    --green: #5CBF94;        /* soft clean green for highlights */
+    --text: #2A2A2A;         /* rich black-gray for readability */
+    --soft-gray: #ECEEF0;    /* section backgrounds or cards */
+  }
 
     body {
       margin: 0;
-      font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
-      background-color: var(--beige);
+      font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', sans-serif;
+      background-color: var(--bg);
       color: var(--text);
       line-height: 1.6;
+    }
+
+    p {
+      font-weight: 400;
     }
 
     header {
       background-color: var(--navy);
       color: white;
-      padding: 1rem 2rem;
+      padding: 0.75rem 1.5rem;
       text-align: center;
+      border-bottom: 1px solid var(--soft-gray);
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1rem;
+      margin: 0.3rem 0 0;
+      font-weight: 300;
     }
 
     main {
@@ -39,13 +56,15 @@
     }
 
     h2 {
-      border-bottom: 2px solid var(--light-green);
+      border-bottom: 2px solid var(--green);
       padding-bottom: 0.3rem;
       margin-bottom: 1.2rem;
     }
 
     section {
       margin-bottom: 3rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--soft-gray);
     }
 
     .project {
@@ -68,13 +87,24 @@
       background-color: var(--navy);
       color: white;
     }
+    
+    a {
+      color: var(--green);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Your Name</h1>
-    <p>Exploring Bioelectricity, Complexity & Unconventional Intelligence</p>
+    <h1>Melyne Zhou</h1>
+    <p>Always learning.</p>
   </header>
 
   <main>
@@ -82,16 +112,20 @@
     <section id="about">
       <h2>About</h2>
       <p>Hi! I’m a 16 y/o exploring all things bioelectricity and diverse intelligence.</p>
-      <p>I’m currently working with Dr. Michael Levin investigating complexity algorithms. Previously, I’ve worked in labs from materials science to organoids for cancer.</p>
-      <p>I’m interested in investigating the psychology of unconventional systems—i.e. applying behavioral tests typically administered in mice to deceptively simple organisms, algorithms, and synthetic/bioengineered systems. Fascinated by “code” in biology, such as deciphering patterns of communication between cells in the brain and elsewhere in the body.</p>
-      <p>I’m a fast learner, and I love diving down rabbit holes. Recent deep dives include organoids for cancer, biobots (anthrobots, neurobots), and developmental robotics & zero-shot learning. Curious about systems for innovation and scientific progress.</p>
+      <p>
+        Currently, I'm working with Dr. 
+        <a href="https://drmichaellevin.org/" target="_blank">Michael Levin</a>
+        investigating complexity algorithms. Previously, I’ve worked in labs from materials science to organoids for cancer.
+      </p>
+      <p>I’m interested in investigating the psychology of unconventional systems—i.e. applying behavioral tests typically administered in mice to deceptively simple organisms, algorithms, and synthetic/bioengineered systems. Fascinated by “code” in biology, deciphering patterns of communication between cells in the brain and elsewhere in the body to understand memory and learning.</p>
+      <p>I’m a fast learner, and I love diving down rabbit holes. Recently curious about systems for innovation and scientific progress and weird but cool organisms.</p>
     </section>
 
     <section id="projects">
       <h2>Projects</h2>
 
       <div class="project">
-        <h3>Wrana lab @ LTRI (Mt. Sinai Health)</h3>
+        <h3>Wrana lab @ Lunenfeld-Tanenbaum Research Institute</h3>
         <ul>
           <li>Shadowed tissue culture and imaging of intestinal and cerebral organoids for cancer.</li>
           <li>Performed qPCR and cDNA extraction, gel electrophoresis.</li>
@@ -100,7 +134,7 @@
       </div>
 
       <div class="project">
-        <h3>AUTODIAL lab @ UofT</h3>
+        <h3>AUTODIAL lab @ University of Toronto</h3>
         <ul>
           <li>Contributed to developing modular self-driving lab for electrochemistry experiments.</li>
           <li>Analysis of electrochemical data for alloys.</li>
@@ -118,16 +152,23 @@
       <div class="project">
         <h3>Speaker</h3>
         <ul>
-          <li>Spoke at Web Summit in Lisbon, Portugal about the future of bioengineered systems in healthcare.</li>
-          <li>Spoke at Top 25 Women of Influence luncheon about lessons in making an influence.</li>
+          <li>Spoke at Web Summit 2024 in Lisbon, Portugal about the future of bioengineered systems in healthcare.</li>
+          <li>Spoke at Top 25 Women of Influence 2025 Luncheon about lessons in making an influence.</li>
         </ul>
       </div>
 
       <div class="project">
         <h3>Writing</h3>
         <ul>
-          <li>Published article w/ Climate Capital on AI for Materials Science.</li>
-          <li>Personal essays and rabbit holes (see Substack).</li>
+          <li>
+            Published article with Climate Capital on
+            <a href="https://climatecap.substack.com/p/a-new-paradigm-how-ai-and-robotics" target="_blank">AI for materials science</a>.
+          </li>
+          <li>
+            Personal essays and rabbit holes (see 
+            <a href="https://melyne.substack.com/" target="_blank">Substack</a>
+            ).
+          </li>
         </ul>
       </div>
 
@@ -136,7 +177,7 @@
   </main>
 
   <footer>
-    &copy; 2025 Your Name. All rights reserved.
+    &copy; 2025 Melyne Zhou. All rights reserved.
   </footer>
 
 </body>
