@@ -14,7 +14,7 @@
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             line-height: 1.65;
-            color: #1a3d3a;
+            color: #024b47;
             max-width: 680px;
             margin: 0 auto;
             padding: 50px 20px;
@@ -31,12 +31,13 @@
         
         .logo {
             font-size: 26px;
-            font-weight: 700;
-            color: #0d2926;
+            font-weight: 500;
+            color: #024b47;
             cursor: pointer;
             text-decoration: none;
             letter-spacing: -0.3px;
             transition: all 0.3s ease;
+            border-bottom: none !important;
         }
         
         .logo::after {
@@ -44,7 +45,8 @@
         }
         
         .logo:hover {
-            color: #061815;
+            color: #013330;
+            border-bottom: none !important;
         }
         
         nav {
@@ -68,6 +70,7 @@
             letter-spacing: 0.2px;
             transition: all 0.3s ease;
             position: relative;
+            border-bottom: none !important;
         }
         
         nav a::after {
@@ -87,7 +90,8 @@
         }
         
         nav a:hover, nav a.active {
-            color: #0d2926;
+            color: #024b47;
+            border-bottom: none !important;
         }
         
         h1 {
@@ -95,7 +99,7 @@
             font-size: 36px;
             font-weight: 400;
             margin-bottom: 25px;
-            color: #0d2926;
+            color: #024b47;
             letter-spacing: 0.5px;
         }
         
@@ -104,7 +108,7 @@
             font-weight: 600;
             margin-top: 35px;
             margin-bottom: 18px;
-            color: #0d2926;
+            color: #024b47;
             letter-spacing: -0.2px;
         }
         
@@ -113,7 +117,7 @@
             font-weight: 500;
             margin-top: 20px;
             margin-bottom: 12px;
-            color: #1a3d3a;
+            color: #024b47;
         }
         
         h4 {
@@ -127,7 +131,7 @@
         
         p {
             margin-bottom: 18px;
-            color: #244a46;
+            color: #024b47;
             line-height: 1.75;
         }
         
@@ -136,26 +140,21 @@
             text-decoration: none;
             position: relative;
             transition: all 0.3s ease;
-        }
-        
-        a::after {
-            content: '';
-            position: absolute;
-            width: 0;
-            height: 2px;
-            bottom: -3px;
-            left: 0;
-            background: linear-gradient(90deg, #1f4d47, #2a6b63);
-            transition: width 0.3s ease;
-            border-radius: 1px;
-        }
-        
-        a:hover::after {
-            width: 100%;
+            border-bottom: 1px solid #1f4d47;
         }
         
         a:hover {
-            color: #0d2926;
+            color: #013330;
+            border-bottom-color: #013330;
+        }
+        
+        /* Special styling for the internal link to thoughts page */
+        a.nav-link {
+            border-bottom: none !important;
+        }
+        
+        a.nav-link:hover {
+            border-bottom: none !important;
         }
         
         .section {
@@ -202,7 +201,7 @@
             font-size: 13px;
             margin-right: 8px;
             margin-bottom: 8px;
-            color: #1a3d3a;
+            color: #024b47;
             font-weight: 500;
         }
         
@@ -213,11 +212,56 @@
         
         ul.styled li {
             margin-bottom: 8px;
-            color: #244a46;
+            color: #024b47;
         }
         
         ul.styled li::marker {
-            color: #0d2926;
+            color: #024b47;
+        }
+        
+        ul.thoughts {
+            list-style: none;
+            margin-left: 0;
+            padding-left: 0;
+        }
+        
+        ul.thoughts > li {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            position: relative;
+            color: #024b47;
+            line-height: 1.75;
+            font-size: 15px;
+        }
+        
+        ul.thoughts > li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: #2a6b63;
+        }
+        
+        ul.thoughts ul {
+            list-style: none;
+            margin-left: 20px;
+            margin-top: 8px;
+            padding-left: 0;
+        }
+        
+        ul.thoughts ul li {
+            margin-bottom: 6px;
+            padding-left: 20px;
+            position: relative;
+            color: #024b47;
+            font-size: 15px;
+            line-height: 1.75;
+        }
+        
+        ul.thoughts ul li::before {
+            content: "◦";
+            position: absolute;
+            left: 0;
+            color: #72C4C8;
         }
         
         .highlight {
@@ -257,6 +301,7 @@
             <ul>
                 <li><a href="#about" class="nav-link active">About</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#thoughts" class="nav-link">Thoughts</a></li>
             </ul>
         </nav>
     </div>
@@ -273,7 +318,7 @@
                 I'm passionate about the process of innovation for social impact. I love studying unexpected behaviors in minimal systems and exploring borderline sci-fi ideas. In my free time, I enjoy falling down (sometimes seemingly random) rabbit holes!
             </p>
             <p>
-                Currently, I'm curious about zero-shot learning in organisms without nervous systems, living cell therapeutics, self-assembly, nonlinear causality, and vascular networks in nature and everywhere else.
+                Currently, I'm curious about zero-shot learning in organisms without nervous systems, living cell therapeutics, self-assembly, nonlinear causality, and vascular networks in nature and everywhere else. Some of my thoughts are <a href="#thoughts" class="nav-link">here</a>!
             </p>
             <p>
                 Passion is infectious. Please feel free to reach out to me on <a href="https://www.linkedin.com/in/melyne-zhou-5546b3271/" target="_blank">LinkedIn</a> if you'd like to chat!
@@ -302,7 +347,53 @@
                 I write on my personal <a href="https://melyne.substack.com/" target="_blank">Substack</a> and <a href="https://medium.com/@melyne.zhou" target="_blank">Medium</a>.
             </p>
         </div>
+    </div>
 
+    <!-- Thoughts Page -->
+    <div id="thoughts" class="page">
+        <h1>Here are some of my questions and other thoughts!</h1>
+        
+        <div class="section">
+            <ul class="thoughts">
+                <li>
+                    We don't know what true early cancer even looks like, we've actually never observed this. The theory is that our body kills early cancer all the time but we have no in vivo or in vitro way of confirming this…even our theories rely on studies with mature cancer cell lines
+                    <ul>
+                        <li>This is part of a broader problem re measurement tools in biology…I believe better measurement & models unlock huge multipliers to progress</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    Human brains evolved to think in linear cause-effect ways (energy-efficient in survival situations), which definitely affects how we approach science. What does a brain that thinks in nonlinear cause-effect ways look like, where does it even begin?
+                </li>
+                
+                <li>
+                    What are the limits to what we can "grow" as opposed to manual assembly? What happens when we run out of materials we cannot grow? 100% recycling? Space mining?
+                </li>
+                
+                <li>
+                    From an energetics POV, what are the limits of using cells vs. inorganic (or "dead") matter as the substrate for a robot? What is the tradeoff between programmed/intelligent behavior and energy costs of keeping things alive?
+                    <ul>
+                        <li>There is a recent shift from working with passive to more active physical substrates…how much can we exploit this, what are the limits?</li>
+                    </ul>
+                </li>
+                
+                <li>
+                    The reversal of apoptosis (programmed cell death) is called anastasis - could anastasis but for senescence (aging) be possible?
+                </li>
+                
+                <li>
+                    The concept of trypsinizing cells via passaging is pretty crazy. Imagine you just met your neighbour two days ago, then some psychologist announces they want to study your friendship and induces a hurricane that tears everything apart and now you have a new neighbour.
+                </li>
+                
+                <li>
+                    The problem of transfer learning in ML, and how toddlers are amazing at this. What's so special about them, is it an energy efficiency problem? What about innate biological biases we're born with?
+                </li>
+                
+                <li>
+                    What unique conditions would it take to recreate a modern-day Bell Labs? Period of technological stagnation? Unique historical conditions…
+                </li>
+            </ul>
+        </div>
     </div>
 
     <script>
@@ -338,4 +429,3 @@
     </script>
 </body>
 </html>
-
